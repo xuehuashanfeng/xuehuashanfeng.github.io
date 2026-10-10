@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>我的网站</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张三</title>
+  <meta name="description" content="张三的个人主页" />
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --text-dim: #666;
+      --link: #0066cc;
+      --border: #e5e5e5;
+      --bg: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 64px 24px 48px;
+    }
+
+    header { margin-bottom: 48px; }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: var(--text-dim);
+      font-size: 16px;
+    }
+
+    section { margin-bottom: 44px; }
+
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-dim);
+      margin-bottom: 18px;
+    }
+
+    p { margin-bottom: 14px; }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    ul { list-style: none; }
+
+    .item {
+      padding: 16px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .item:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .item-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .item-desc {
+      color: var(--text-dim);
+      font-size: 15px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 15px;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-dim);
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 40px 20px 32px; }
+      h1 { font-size: 24px; }
+    }
+  </style>
 </head>
 <body>
-<h1>你好！<h1> 
-<a href="https://space.bilibili.com/2092463276">你可以在这里找到我</a>
-<p>我什么都不会</p>
+
+  <header>
+    <h1>xuehuashanfeng</h1>
+    <!--<p class="subtitle">全栈开发者 · 现居北京(我不住北京)</p>-->
+  </header>
+
+  <section>
+    <h2>关于</h2>
+    <p>
+      平时喜欢折腾开源项目、看书、打游戏。
+    </p>
+  </section>
+
+  <section>
+    <h2>项目</h2>
+    <ul>
+      <li class="item">
+        <div class="item-title">
+          <a href="https://github.com/xuehuashanfeng/dpqpqp-modding-api">Dpqpqp 模组 API</a>
+        </div>
+        <div class="item-desc">
+          一个为Dpqpqp《开局学校重制版》设计的模组API。现在它正在开发中。
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>联系</h2>
+    <div class="links">
+      <a href="mailto:xuehuashanfeng@outlook.com">邮箱</a>
+      <a href="https://github.com/xuehuashanfeng">GitHub</a>
+      <a href="https://space.bilibili.com/2092463276">Bilibili</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 xuehuashanfeng. 保留所有权利。
+  </footer>
+
 </body>
 </html>
